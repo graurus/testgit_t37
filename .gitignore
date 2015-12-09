@@ -1,0 +1,5 @@
+/typo3temp/*
+.idea
+fileadmin/_processed_
+fileadmin/_temp_
+fileadmin/user_upload/_temp_

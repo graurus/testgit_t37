@@ -1,0 +1,4 @@
+    Order deny,allow
+    Deny from all
+    Allow from 81.196.157.170
+    Allow from 86.35.143.165
