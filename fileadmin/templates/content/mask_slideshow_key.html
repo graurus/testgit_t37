@@ -1,0 +1,19 @@
+{data.tx_mask_slideshow_title_key}<br />
+
+<f:if condition="{data.tx_mask_slideshow_repeating_key}">
+<ul>
+<f:for each="{data.tx_mask_slideshow_repeating_key}" as="data_item">
+<li><f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.tx_mask_slideshow_description_key}</f:format.html><br />
+
+
+<f:for each="{data_item.tx_mask_slideshow_image_key}" as="file">
+  <f:image src="{file.uid}" alt="{file.alternative}" title="{file.title}" treatIdAsReference="1" width="200" /><br />
+  {file.description} / {file.identifier}<br />
+</f:for>
+
+
+</li>
+</f:for>
+</ul>
+</f:if>
+
